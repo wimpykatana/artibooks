@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1= 'software'
+  p Node.js Technical Test
+  br
+  h1= 'article'
+  br
+  p /artikel = for get all articel
+  br
+  p /artikel/sort?date=des = for get all articel sort by date descending
+  br
+  p /artikel/sort?date=asc = for get all articel sort by date ascending
+  br
+  p /artikel/search/:val = for get some value inside abstract
+    p sample /artikel/search/Armed
+  br
+  p /artikel/detail/:id = for get detail by _id
+    p sample: /artikel/detail/e13699e8-82a9-5b93-a194-cf0a37f7a415
+  br
+  hr
+  h1= 'books'
+  br
+  p /books/type/:type = for get all books
+    p sample: books/type/ebook == to get ebook 
+    p sample: books/type/hardcover = to get hardcover
