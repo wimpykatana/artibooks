@@ -41,4 +41,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-console.log(`users microservice up and running at port: ${process.env.PORT}`);
+console.log(`up and running at port: 3000 / localhost:3000`);
